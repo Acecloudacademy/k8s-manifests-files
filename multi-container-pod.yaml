@@ -1,0 +1,16 @@
+---
+#create a pod named my-pod-2, create container name c2 & image name nginx 
+apiVersion: v1 
+kind: Pod 
+metadata: 
+  name: my-multicontainer-pod
+  labels: 
+    author: bharath 
+    location: bangalore 
+spec: 
+  containers:
+    - image: nginx
+      name: my-nginx-container
+    - name: my-redis-container
+      image: redis
+...
