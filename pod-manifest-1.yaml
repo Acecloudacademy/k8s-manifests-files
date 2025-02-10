@@ -1,0 +1,13 @@
+--- 
+# we need to create a pod named my-pod-11 , container - name c1 & image tomee 
+apiVersion: v1 
+kind: Pod 
+metadata: 
+  name: my-pod-11
+  labels: 
+    author: bharath
+spec: 
+  containers:
+  - name: c1 
+    image: tomee 
+ ...
